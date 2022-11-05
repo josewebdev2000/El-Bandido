@@ -270,11 +270,6 @@ i.social-icon:hover
         margin-bottom: 80px;
     }
 
-    #mexican-card
-    {
-        margin-top: 20px;
-    }
-
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -324,15 +319,5 @@ i.social-icon:hover
     .card-img
     {
         width: 100px;
-    }
-
-    #mexican-card
-    {
-        margin-top: 17px;
-    }
-
-    #vegan-card
-    {
-        margin-top: 5px;
     }
 }

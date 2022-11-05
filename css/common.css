@@ -36,6 +36,11 @@ rgb(238, 238, 238)
 
 /* General CSS Rules */
 
+body
+{
+    font-size: 150%;
+}
+
 #unfit
 {
     display: none;
