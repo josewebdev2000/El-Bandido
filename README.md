@@ -5,10 +5,10 @@
 <h3>Disclaimer</h3>
 
 <p><strong>El Bandido</strong> is a REAL MEXICAN restaurant whose link you may find here:<br>
-<a href="https://www.elbandidomexican.com/" target="_blank"></a>
+<a href="https://www.elbandidomexican.com/" target="_blank">The Real El Bandido</a>
 </p>
 
-<p>This Front-End Project has <strong><i>NOTHING TO DO</strong><i> with the real <strong>El Bandido</strong> restaurant.</p>
+<p>This Front-End Project has <strong><i>NOTHING TO DO</strong></i> with the real <strong>El Bandido</strong> restaurant.</p>
 
 <p>I made this project only to showcase my abilities on Bootstrap and jQuery.</p>
 
