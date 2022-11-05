@@ -1,0 +1,213 @@
+/*
+    Light Colors
+
+    rgb(179, 255, 174)
+    rgb(248, 255, 219)
+    rgb(255, 100, 100)
+    rgb(255, 125, 125)
+
+*/
+
+/* Save Colour Pallete in Variables */
+:root
+{
+    --pink:rgb(255,100,100);
+    --green: rgb(142,229,136);
+    --lightgreen: rgb(179, 255, 174);
+    --lightpink: rgb(255, 125, 125);
+    --yellowish: rgb(248, 255, 219);
+}
+
+
+/* Styles for index.html (Main Page) */
+
+body.light
+{
+    background-color: var(--yellowish);
+}
+
+/* Header Styling */
+
+div#logoContainer.light
+{
+    background-color: var(--green);
+    border-color: var(--pink);
+    border-style: double;
+}
+
+img#logo.light
+{
+    border-color: var(--pink);
+    background-color: rgb(238, 238, 238);
+}
+
+h1#brand.light
+{
+    color: rgb(248, 255, 219);
+}
+
+/* Description Section Styling */
+
+section#description.light
+{
+    background-color: var(--lightpink);
+    color: rgb(255,255,255);
+}
+
+.card-header.light
+{
+    background-color: var(--yellowish);
+    color: var(--black);
+}
+
+/* Scheduling Section Styling */
+
+section#schedule.light
+{
+    background-color: var(--lightgreen);
+    color: var(--black);
+}
+
+section#schedule h2.light
+{
+    color: var(--lightbrown);
+}
+
+
+/* Bootstrap Media Queries */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) 
+{
+    /* Header Styling */ 
+
+    h1#brand.light
+    {
+        top: 8cm;
+        font-size: 50px;
+    }
+
+    div#logoIcon.light, div#logoContainer.light
+    {
+        border-width: 10px;
+    }
+
+    button#mainCollapseBtn.light:hover
+    {
+        box-shadow: 0 0 0 0.15rem;
+    }
+
+    button#mainCollapseBtn.light:active
+    {
+        box-shadow: 0 0 0 0.25rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 575.99px) and (max-width: 767.98px) 
+{ 
+    /* Header Styling */ 
+
+    img#logo.light
+    {
+        top: 5vw;
+        border-width: 7px;
+        padding: 5px;
+        width: 20%;
+    }
+
+    h1#brand.light
+    {
+        top: 7.5cm;
+    }
+
+    div#logoIcon.light, div#logoContainer.light
+    {
+        border-width: 20px;
+    }
+
+    button#mainCollapseBtn.light:hover
+    {
+        box-shadow: 0 0 0 0.20rem;
+    }
+    
+    button#mainCollapseBtn.light:active
+    {
+        box-shadow: 0 0 0 0.30rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 767.99px) and (max-width: 991.98px) 
+{ 
+    /* Header Styling */ 
+
+    img#logo.light
+    {
+        top: 25px;
+        border-width: 7px;
+        padding: 5px;
+        width: 100px;
+    }
+
+    h1#brand.light
+    {
+        top: 230px;
+        font-size: 50px;
+    }
+
+    div#logoContainer.light
+    {
+        border-width: 10px;
+        border-style: solid;
+        margin: 0;
+        height:300px;
+    }
+
+    div#logoIcon.light
+    {
+        background-color: var(--green);
+        border-color: var(--pink);
+        border-style: solid;
+        border-width: 10px;
+        height: 300px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 991.99px)
+{
+    /* Header Styling */ 
+    
+    img#logo.light
+    {
+        top: 25px;
+        border-width: 7px;
+        padding: 5px;
+        width: 120px;
+    }
+
+    h1#brand.light
+    {
+        top: 260px;
+        font-size: 70px;
+    }
+
+    div#logoContainer.light
+    {
+        border-width: 10px;
+        border-style: solid;
+        margin: 0;
+        height:350px;
+    }
+
+    div#logoIcon.light
+    {
+        background-color: var(--green);
+        border-color: var(--pink);
+        border-style: solid;
+        border-width: 10px;
+        height: 350px;
+    }
+
+}

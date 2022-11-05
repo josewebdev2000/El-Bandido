@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!--Page Metadata-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--JQuery JS Library-->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+        <!--JAlert Components-->
+        <link rel="stylesheet" href="node_modules/jAlert/dist/jAlert.css">
+        <script src="node_modules/jAlert/dist/jAlert.min.js"></script>
+        <script src="node_modules/jAlert/dist/jAlert-functions.min.js"></script>
+
+        <!--Bootstrap Framework-->
+        <!-- CSS only -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--My Own Files-->
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main/light.css">
+        <link rel="stylesheet" href="css/main/dark.css">
+        <script src="index.js"></script>
+
+        <!--Page Title-->
+        <title>El Bandido | Restaurante</title>
+        
+    </head>
+
+    <body>
+
+        <!--Devices lower 360px width and 460px height cannot see this page.-->
+        <section id="unfit">
+
+            <h1>Sorry</h1>
+            <h2>&#128557;</h2>
+            <p>Your device's dimensions do not feet the requirements of our web app.</p>
+
+        </section>
+
+        <main>
+
+            <!--Main Page Header-->
+            <header>
+
+                <!--Container for logo div-->
+                <div id="logoContainer">
+
+                    <!--Div for Logo and Title-->
+                    <div id="logoIcon">
+
+                        <!--Bg Image with Responsive class-->
+                        <img src="" id="header-img-bg" class="mx-auto d-block img-fluid" alt="Header Background">
+
+                        <!--Restaurant logo-->
+                        <img src="media/img/mexican.png" id="logo" class="img-fluid" alt="El Bandido Logo">
+
+                        <!--Page Title-->
+                        <h1 id="brand">El Bandido</h1>
+
+                    </div>
+
+                </div>
+
+                <!--Navbar of other pages' links-->
+                <nav class="navbar navbar-expand-md navbar-light bg-light w-100">
+
+                    <!--Button to make Navbar Collapsible-->
+                    <button id="mainCollapseBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bandidoNav" aria-controls="bandidoNav" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--Container for collapsible navbar-->
+                    <div class="collapse navbar-collapse w-100 p-3" id="bandidoNav">
+
+                        <!--Unordered list for collapsible navbar at the left-->
+                        <ul class="nav navbar-nav w-100">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Locations</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+
+                        </ul>
+
+                        <!--Unordered list for dark mode button at the right-->
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <!--Light/Dark Mode Switcher-->
+                            <li class="nav-item" id="switcher-parent">
+                                <button id="mode-switcher" class="btn btn-dark navbar-btn">
+                                    <i class="bi-moon"></i>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </header>
+
+            <!--Description Section-->
+            <section class="text-center" id="description">
+
+                <!--Description Intro-->
+                <div id="desc-intro" class="container-fluid">
+
+                    <h2>Our Main Features</h2>
+
+                </div>
+
+                <!--Description cards-->
+                <div id="desc-cards" class="container">
+
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <!--Mexico Style Card-->
+                            <div id="mexican-card" class="card bg-light text-dark">
+
+                                <div class="card-header">
+                                    <h3>Set in Mexico</h3>
+
+                                    <img id="mexican-flag" class="card-img" src="media/img/mexico.png" alt="Mexican Flag">
+
+                                </div>
+
+                                <div class="card-body">
+
+                                    <p>Mexico will come to you as soon as you come to <span class="rest-title">El Bandido.</span></p>
+
+                                    <p>So come join <span class="spanish-phrase">La Fiesta.</span></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <!--Customer Service Card-->
+                            <div id="customer-card" class="card bg-light text-dark">
+
+                                <div class="card-header">
+                                    <h3>Quality Customer Service</h3>
+
+                                    <img id="smiley-face" class="card-img" src="media/img/smiley-light.png" alt="Smiley Face">
+
+                                </div>
+
+                                <div class="card-body">
+
+                                    <p><span class="rest-title">El Bandido</span> is the perfect place to feel appreciated.</p>
+
+                                    <p>You will be part of our <span class="spanish-phrase">familia.</span></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+
+                            <!--Vegetarian Friendly Card-->
+                            <div id="vegan-card" class="card bg-light text-dark">
+
+                                <div class="card-header">
+                                    <h3>Vegan Friendly</h3>
+
+                                    <img id="vegan-friendly" class="card-img" src="media/img/vegan-light.png" alt="Smiley Face">
+
+                                </div>
+
+                                <div class="card-body">
+
+                                    <p><span class="rest-title">El Bandido</span> adapted all its dishes to a vegan version.</p>
+
+                                    <p>We want our vegan customer to be <span class="spanish-phrase">contentos.</span></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!--Schedule Section-->
+            <section id="schedule" class="container p-3 text-center">
+
+                <h2 class="p-3">Schedule</h2>
+
+                <h4 class="p-3">Mon-Fri    8:00 AM - 11:30 PM</h4>
+                <h4 class="p-3">Sat-Sun    10:00AM - 10:00 PM</h4>
+
+            </section>
+
+            <!--Footer-->
+            <footer class="container-fluid text-center p-3 bg-light text-dark" id="footer">
+                <i class="social-icon bi bi-facebook"></i>
+                <i class="social-icon bi bi-twitter"></i>
+                <i class="social-icon bi bi-instagram"></i>
+                <i class="social-icon bi bi-envelope"></i>
+                <p>© El Bandido</p>
+            
+            </footer>
+            
+        </main>
+
+    </body>
+
+</html>

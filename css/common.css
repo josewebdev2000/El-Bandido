@@ -1,0 +1,78 @@
+/* CSS File to be shared among all HTML Pages */
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Kaushan+Script&family=Merriweather:ital@1&family=Source+Serif+Pro&family=Ubuntu:wght@500&display=swap');
+
+/* Ways to Use these fonts
+
+    font-family: 'Crete Round', serif;
+
+    font-family: 'Kaushan Script', cursive;
+
+    font-family: 'Merriweather', serif;
+
+    font-family: 'Source Serif Pro', serif;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    */
+
+/* Light colors set
+
+rgb(179, 255, 174)
+rgb(248, 255, 219)
+rgb(255, 100, 100)
+rgb(255, 125, 125)
+
+Dark colors set
+
+rgb(15, 14, 14)
+rgb(84, 18, 18)
+rgb(139, 154, 70)
+rgb(238, 238, 238)
+
+*/
+
+/* General CSS Rules */
+
+#unfit
+{
+    display: none;
+}
+
+/* Media Queries */
+
+/* Media Query for unfit devices lower than 360px */
+@media (max-width: 300px)
+{
+
+    main
+    {
+        display: none;
+    }
+
+    #unfit
+    {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 120%;
+        margin-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        height: 350px;
+    }
+
+    #unfit h1
+    {
+        font-size: 50px;
+    }
+
+    #unfit h2
+    {
+        font-size: 100px;
+    }
+
+}

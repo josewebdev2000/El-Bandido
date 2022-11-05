@@ -1,0 +1,338 @@
+/* Styles for index.html (Main Page) */
+
+/* Header Styling */
+
+img#logo, h1#brand
+{
+    position: absolute;
+}
+
+
+img#header-img-bg
+{
+    max-height: 500px;
+    width: 100%;
+}
+
+button#mainCollapseBtn:focus
+{
+    box-shadow:none;
+}
+
+img#logo
+{
+    border-style: solid;
+    border-radius: 50%;
+}
+
+h1#brand
+{
+    font-family: 'Source Serif Pro', serif;
+}
+
+/* Description Section Styling */
+
+div#desc-intro
+{
+    font-family: 'Crete Round', serif;
+}
+
+.card
+{
+    border: none;
+    transition-property: transform;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+}
+
+span.rest-title
+{
+    font-family: 'Source Serif Pro', serif; 
+}
+
+span.spanish-phrase
+{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90%;
+}
+
+/* Scheduling Section Styling */
+section#schedule h2
+{
+    font-family: 'Merriweather', serif;
+}
+
+section#schedule h4
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Footer Section */
+i.social-icon
+{
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+i.social-icon:hover
+{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+/* Bootstrap Media Queries */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) 
+{ 
+   /* Header Styling */
+
+    div#logoIcon
+    {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    div#pages-navbar
+    {
+        margin-top: 20%;
+    }
+
+    
+    button#mainCollapseBtn
+    {
+        margin: auto;
+    }
+
+    img#logo
+    {
+        margin-top: 20px;
+        border-width: 5px;
+        padding: 5px;
+        width: 30%;
+
+    }
+
+    /* Description Section Styling*/
+    section#description
+    {
+        padding: 30px;
+    }
+
+    div#desc-intro
+    {
+        margin-bottom: 40px;
+    }
+
+    #mexican-card, #customer-card
+    {
+        margin-bottom: 25px;
+    }
+
+    .card-img
+    {
+        width: 30%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) 
+{
+    /* Header Styling */
+
+    div#logoIcon
+    {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    div#pages-navbar
+    {
+        margin-top: 20%;
+    }
+
+    div#bandidoNav
+    {
+        text-align: center;
+    }
+
+    
+    button#mainCollapseBtn
+    {
+        margin: auto;
+    }
+
+    h1#brand
+    {
+        font-size: 70px;
+    }
+
+    img#logo
+    {
+        width: 25%;
+        top: 5px;
+    }
+
+    img#header-img-bg
+    {
+        height: 350px;
+    }
+
+    /* Description Section Styling */
+    section#description
+    {
+        padding: 50px;
+    }
+
+    div#desc-intro
+    {
+        margin-bottom: 40px;
+    }
+
+    #mexican-card, #customer-card
+    {
+        margin-bottom: 50px;
+    }
+
+    #vegan-card
+    {
+        margin-bottom: 20px;
+    }
+
+    .card-img
+    {
+        width: 40%;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 767.99px) and (max-width: 991.98px)
+{
+    /* Header Styling */
+
+    div#bandidoNav
+    {
+        text-align: center;
+    }
+
+    div#logoContainer
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#logoIcon
+    {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        width: 50%;
+        margin: 10px;
+        height: 350px;
+    }
+
+    div#pages-navbar
+    {
+        margin-top: 25%;
+    }
+
+    /* Description Section Styling */
+    section#description
+    {
+        padding: 50px;
+    }
+
+    div#desc-intro
+    {
+        margin-bottom: 50px;
+    }
+
+    .card-img
+    {
+        width: 120px;
+    }
+
+    #mexican-card, #customer-card
+    {
+        margin-bottom: 80px;
+    }
+
+    #mexican-card
+    {
+        margin-top: 20px;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 991.99px)
+{ 
+    /* Header Styling */
+    
+    div#bandidoNav
+    {
+        text-align: center;
+    }
+
+    div#logoContainer
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#logoIcon
+    {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        width: 50%;
+        margin: 10px;
+        height: 400px;
+    }
+
+    div#pages-navbar
+    {
+        margin-top: 25%;
+    }
+
+    /* Description Section */
+    section#description
+    {
+        padding: 60px;
+    }
+
+    div#desc-intro
+    {
+        margin-bottom: 50px;
+    }
+
+    .card-img
+    {
+        width: 100px;
+    }
+
+    #mexican-card
+    {
+        margin-top: 17px;
+    }
+
+    #vegan-card
+    {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,209 @@
+/* Styles for index.html (Main Page) */
+
+/*
+
+    Dark Colors
+
+    rgb(15, 14, 14)
+    rgb(84, 18, 18)
+    rgb(139, 154, 70)
+    rgb(238, 238, 238)
+
+*/
+
+/* Save colour pallete in variables */
+:root
+{
+    --black: rgb(15,14,14);
+    --brown: rgb(84,18,18);
+    --lightbrown: rgb(94, 10, 10);
+    --darkwhite: rgb(238,238,238);
+    --greenow: rgb(139, 154, 70);
+}
+
+body.dark
+{
+    background-color: var(--black);
+}
+
+/* Header Styling */ 
+div#logoContainer.dark
+{
+    background-color: var(--brown);
+    border-color: var(--black);
+    border-style: double;
+}
+
+img#logo.dark
+{
+    border-color: var(--brown);
+    background-color: var(--darkwhite);
+}
+
+h1#brand.dark
+{
+    color: var(--greenow);
+}
+
+/* Description Section Styling */
+
+section#description.dark
+{
+    background-color: var(--lightbrown);
+    color: var(--darkwhite);
+}
+
+.card-header.dark
+{
+    background-color: var(--greenow);
+    color: var(--darkwhite);
+}
+
+/* Schedule Section Styling */
+section#schedule.dark
+{
+    background-color: var(--darkwhite);
+}
+
+section#schedule h2.dark
+{
+    color: var(--greenow);
+}
+
+/* Bootstrap Media Queries */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) 
+{ 
+    /* Header Styling */ 
+
+    h1#brand.dark
+    {
+        top: 7.5cm;
+        font-size: 50px;
+    }
+
+    div#logoIcon.dark, div#logoContainer.dark
+    {
+        border-width: 15px;
+    }
+
+    button#mainCollapseBtn.dark:hover
+    {   
+        box-shadow: 0 0 0 0.15rem rgb(211, 211, 211);
+    }
+
+    button#mainCollapseBtn.dark:active
+    {
+        box-shadow: 0 0 0 0.25rem rgb(211, 211, 211);
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 575.99px) and (max-width: 767.98px) 
+{
+    /* Header Styling */ 
+
+    img#logo.dark
+    {
+        top: 5vw;
+        border-width: 7px;
+        padding: 5px;
+        width: 20%;
+    }
+
+    h1#brand.dark
+    {
+        top: 300px;
+        font-size: 70px;
+    }
+
+    div#logoIcon.dark, div#logoContainer.dark
+    {
+        border-width: 20px;
+    }
+
+    button#mainCollapseBtn.dark:hover
+    {
+        box-shadow: 0 0 0 0.20rem rgb(211, 211, 211);
+    }
+
+    button#mainCollapseBtn.dark:active
+    {
+        box-shadow: 0 0 0 0.30rem rgb(211, 211, 211);
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 767.99px) and (max-width: 991.98px)
+{
+    /* Header Styling */ 
+
+    img#logo.dark
+    {
+        top: 25px;
+        border-width: 7px;
+        padding: 5px;
+        width: 100px;
+    }
+
+    h1#brand.dark
+    {
+        top: 230px;
+        font-size: 50px;
+    }
+
+    div#logoContainer.dark
+    {
+        border-width: 10px;
+        border-style: solid;
+        margin: 0;
+        height: 300px;
+    }
+
+    div#logoIcon.dark
+    {
+        background-color: var(--brown);
+        border-color: var(--black);
+        border-style: solid;
+        border-width: 10px;
+        height: 300px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 991.99px)
+{
+    /* Header Styling */ 
+    
+    img#logo.dark
+    {
+        top: 25px;
+        border-width: 7px;
+        padding: 5px;
+        width: 120px;
+    }
+
+    h1#brand.dark
+    {
+        top: 250px;
+        font-size: 70px;
+    }
+
+    div#logoContainer.dark
+    {
+        border-width: 10px;
+        border-style: solid;
+        margin: 0;
+        height: 350px;
+    }
+
+    div#logoIcon.dark
+    {
+        background-color: var(--brown);
+        border-color: var(--black);
+        border-style: solid;
+        border-width: 10px;
+        height: 350px;
+    }
+}
